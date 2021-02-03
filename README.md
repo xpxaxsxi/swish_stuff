@@ -20,3 +20,23 @@ k    <<      n.
 a >> b. b >> c. c >> d.
 a         <<         d. 
 ```
+
+```
+:- op(500,yfx,>>).
+:- op(500,xfy,<<).
+
+:- discontiguous (>>)/2.
+:- discontiguous (<<)/2.
+
+t(A,B):-
+    A>>B.
+t(A,B):-
+    B<<A.
+
+route(From,To,Visited):-
+    t(From,MidPoint),
+    \+memberchk(MidPoint,Visited),
+    VisitedNew=[MidPoint|Visited],
+    (To=MidPoint;
+    route(MidPoint,To,VisitedNew)).
+```
