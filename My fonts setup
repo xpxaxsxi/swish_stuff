@@ -1,0 +1,23 @@
+! Binding for the logical font-names.  You can bind any name to any
+! font here.
+
+display.system_fonts:	[ normal    := font(helvetica, roman,   12), \
+			  bold      := font(helvetica, bold,    12), \
+			  italic    := font(helvetica, oblique, 13), \
+			  small     := font(helvetica, roman,   11), \
+			  large     := font(helvetica, roman,   15), \
+			  boldlarge := font(helvetica, bold,    15), \
+			  huge      := font(helvetica, roman,   19), \
+			  boldhuge  := font(helvetica, bold,    19), \
+			  fixed     := font(screen,    roman,   13), \
+			  tt        := font(screen,    roman,   13), \
+			  boldtt    := font(screen,    bold,    13), \
+			  symbol    := font(symbol,    roman,   12)  \
+			]
+
+! Scale all fonts with a constant factor.
+
+font.scale: 1.3
+
+helvetica_fonts: 'Verdana'
+screen_fonts: 'Courier New'
