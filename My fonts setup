@@ -3,21 +3,17 @@
 
 display.system_fonts:	[ normal    := font(helvetica, roman,   12), \
 			  bold      := font(helvetica, bold,    12), \
-			  italic    := font(helvetica, oblique, 13), \
+			  italic    := font(helvetica, oblique, 12), \
 			  small     := font(helvetica, roman,   11), \
 			  large     := font(helvetica, roman,   15), \
 			  boldlarge := font(helvetica, bold,    15), \
 			  huge      := font(helvetica, roman,   19), \
-			  boldhuge  := font(helvetica, bold,    19), \
-			  fixed     := font(screen,    roman,   13), \
-			  tt        := font(screen,    roman,   13), \
-			  boldtt    := font(screen,    bold,    13), \
-			  symbol    := font(symbol,    roman,   12)  \
+			  boldhuge  := font(helvetica, bold,    18), \
+			  fixed     := font(screen,    roman,   12), \
+			  tt        := font(screen,    roman,   12), \
+			  boldtt    := font(screen,    bold,    12), \
+			  symbol    := font(symbol,    roman,   11)  \
 			]
-
-! Scale all fonts with a constant factor.
-
-font.scale: 1.3
-
+!In Windows 10 in swipl-win.exe a Courier New 10pt is a same size as the PceEmacs Courier New 12pt
 helvetica_fonts: 'Verdana'
 screen_fonts: 'Courier New'
